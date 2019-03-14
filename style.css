@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+/* General */
+*{
+    margin:0;
+    padding:0;
+    align-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    background: #A4A4A4;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+}
+header label, input{
+   display: none;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo img{
+    height: 40px;
+}
+body{
+    margin-top: 75px;
+    background: #BDBDBD;
+    width: 100%;
+}
+section.contenido{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    z-index: 0;
+}
+@media screen and (min-width: 720px){
+    .contenido-header{
+        display: flex;
+        position: sticky;
+    }
+    .logo{
+        flex-grow: 1;
+    }
+    .logo img{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    nav{
+        flex-grow: 1;
+    }
+    nav ul{
+        display: flex;
+        float: right;
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+    nav ul li:last-child{
+        margin-right: 50px;
+    }
+    nav ul li a{
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 1.2em;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    nav ul li a:hover{
+    color: aquamarine;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+    section.contenido{
+        max-width: 1600px;
+    }
+}
+@media screen and (max-width: 640px) { 
+    header label{
+        display: block;
+        font-size: 35px;
+        position: absolute;
+        margin: 15px 25px;
+    }
+    input .check-menu:active > nav{
+        position: relative;
+    }
+    .logo img{
+        float: right;
+        margin: 15px;
+    }
+    header nav{
+        margin-top: 70px;
+        position: absolute;
+        background: #A4A4A4;
+    }
+    nav{
+        width: 75%;
+        display: none;
+    }
+    nav ul li{
+        margin: 5px 5px;
+    }
+  }
