@@ -30,12 +30,12 @@ body{
     margin-top: 75px;
     background: #BDBDBD;
     width: 100%;
+    padding-bottom: 25px;
 }
 section.contenido{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 15px;
-    z-index: 0;
+    width: 95%;
+    margin: 0% auto;
+    text-align: justify;
 }
 @media screen and (min-width: 720px){
     .contenido-header{
@@ -72,18 +72,18 @@ section.contenido{
         transition: all 0.5s ease;
     }
     nav ul li a:hover{
-    color: aquamarine;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+        color: aquamarine;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
     section.contenido{
         max-width: 1600px;
     }
 }
-@media screen and (max-width: 640px) { 
+@media screen and (max-width: 720px) { 
     header label{
         display: block;
         font-size: 35px;
