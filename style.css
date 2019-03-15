@@ -26,6 +26,14 @@ nav ul li a{
 .logo img{
     height: 40px;
 }
+.slider{
+    width: 94%;
+    margin: 0 auto;
+}
+.slider img{
+    width: 100%;
+    overflow: visible;
+}
 body{
     margin-top: 75px;
     background: #BDBDBD;
