@@ -8,7 +8,9 @@
 }
 header{
     width: 100%;
-    background: #A4A4A4;
+    /*background: #A4A4A4;*/
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999999999;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -92,14 +94,26 @@ section.contenido{
     }
 }
 @media screen and (max-width: 720px) { 
+    header{
+        background: rgba(0, 0, 0, 0.9);
+    }
     header label{
         display: block;
         font-size: 35px;
         position: absolute;
         margin: 15px 25px;
+        color: #fff;
     }
-    input .check-menu:active > nav{
-        position: relative;
+    header #check-menu:checked ~ nav{
+        margin-left: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    header #check-menu:checked ~ label{
+        color: aquamarine;
     }
     .logo img{
         float: right;
@@ -108,13 +122,32 @@ section.contenido{
     header nav{
         margin-top: 70px;
         position: absolute;
-        background: #A4A4A4;
+        background: rgba(0, 0, 0, 0.9);
+        width: 50%;
+        margin-left: -75%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;*/
     }
-    nav{
-        width: 75%;
-        display: none;
+    nav ul li:first-child{
+        border-top: 2px solid #fff;
     }
     nav ul li{
         margin: 5px 5px;
+        font-size: 1.3rem;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+        padding: 5px 0;
+    }
+    nav ul li a{
+        color: aquamarine;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        margin: 5px 15px;
+    }
+    body .contenido{
+        width: 90%;
+        margin: 0 auto;
     }
   }
