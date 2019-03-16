@@ -42,6 +42,9 @@ body{
     width: 100%;
     padding-bottom: 25px;
 }
+body .slider img{
+    max-height: 400px;
+}
 section.contenido{
     width: 95%;
     margin: 0% auto;
